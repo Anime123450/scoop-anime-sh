@@ -1,0 +1,19 @@
+# Scoop's own updater. It reads `checkver`/`autoupdate` in the manifest, notices
+# a new anime-sh release, and commits the new version and hash here — so the
+# bucket keeps working without anyone remembering to update it. A bucket nobody
+# updates is worse than no bucket: it installs an old version forever, silently.
+name: Excavator
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
