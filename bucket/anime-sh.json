@@ -1,12 +1,12 @@
 {
-    "version": "0.2.67",
+    "version": "0.2.68",
     "description": "The terminal-native anime client - providers, mirrors and resolvers, handled for you.",
     "homepage": "https://github.com/Anime123450/anime-sh",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Anime123450/anime-sh/releases/download/v0.2.67/anime-sh-0.2.67-windows-x64.exe#/anime.exe",
-            "hash": "a67e7c5d19442c924a673dd7df00f0f8fcf6eaad1749bb802aebdc0ff4108ce5"
+            "url": "https://github.com/Anime123450/anime-sh/releases/download/v0.2.68/anime-sh-0.2.68-windows-x64.exe#/anime.exe",
+            "hash": "bb3564abb18e99436dcf693785c25c4b3be95f98d4d05ab91108c45915b32816"
         }
     },
     "bin": [
@@ -19,7 +19,7 @@
             "anime-sh"
         ]
     ],
-    "depends": "mpv",
+    "depends": "extras/mpv",
     "suggest": {
         "ffmpeg": "ffmpeg"
     },
@@ -33,11 +33,11 @@
             }
         },
         "hash": {
-            "url": "$baseurl/anime.exe.sha256"
+            "url": "$baseurl/anime-sh-$version-windows-x64.exe.sha256"
         }
     },
     "notes": [
-        "mpv was installed alongside anime-sh - it is what actually plays the video.",
+        "Video is played by mpv, which scoop keeps installed as a dependency.",
         "For `anime download` you also need ffmpeg:  scoop install ffmpeg",
         "Run `anime doctor` to check everything was found."
     ]
