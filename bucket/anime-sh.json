@@ -1,12 +1,12 @@
 {
-    "version": "0.2.85",
+    "version": "0.2.87",
     "description": "The terminal-native anime client - providers, mirrors and resolvers, handled for you.",
     "homepage": "https://github.com/Anime123450/anime-sh",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Anime123450/anime-sh/releases/download/v0.2.85/anime-sh-0.2.85-windows-x64.exe#/anime.exe",
-            "hash": "938e8a11ab6c7c65d8dad2d09e69c0a67fe5dd40d1a91bb4e65aba71869831b7"
+            "url": "https://github.com/Anime123450/anime-sh/releases/download/v0.2.87/anime-sh-0.2.87-windows-x64.exe#/anime.exe",
+            "hash": "15d3b5fea3598200e72e156ce593f15180f1fb623f41c2e32b2f54cd92075232"
         }
     },
     "bin": [
